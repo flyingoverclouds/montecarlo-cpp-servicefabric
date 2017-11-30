@@ -92,6 +92,12 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MCEC_Jobs.Interface\MCEC_Jobs.Interface.csproj">
+      <Project>{5858a33a-9e99-4355-8bdd-96579d1ffd4f}</Project>
+      <Name>MCEC_Jobs.Interface</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

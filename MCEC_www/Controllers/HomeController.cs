@@ -22,6 +22,20 @@ namespace MCEC_www.Controllers
             return View();
         }
 
+        public IActionResult MonteCarlo()
+        {
+            ViewData["Message"] = "This page will allow to initiate a new MonteCarlo job.";
+
+            return View();
+        }
+
+        public IActionResult MonteCarloJobs()
+        {
+            ViewData["Message"] = "This page will monitor monte carlo jobs status and result.";
+
+            return View();
+        }
+
         public IActionResult Contact()
         {
             ViewData["Message"] = "Your contact page.";
