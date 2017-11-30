@@ -33,6 +33,8 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MCEC_ComputeEngine\MCEC_ComputeEngine.csproj" />
+    <ProjectReference Include="..\MCEC_Jobs\MCEC_Jobs.csproj" />
+    <ProjectReference Include="..\MCEC_www\MCEC_www.csproj" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
   <PropertyGroup>
