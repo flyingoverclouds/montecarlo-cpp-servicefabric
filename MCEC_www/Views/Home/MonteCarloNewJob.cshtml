@@ -1,0 +1,39 @@
+﻿@model MCEC_Jobs.Interface.JobState
+
+
+@{
+    ViewData["Title"] = "New MonteCarlo job";
+}
+<h2>@ViewData["Title"]</h2>
+<hr/>
+<h3>job settings : </h3>
+<div>
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(mdl => mdl.Id)
+        </dt>
+        <dd>
+            @Html.DisplayFor(mdl => mdl.Id)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(mdl => mdl.Status)
+        </dt>
+        <dd>
+            @Html.DisplayFor(mdl => mdl.Status)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(mdl => mdl.LastUpdate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(mdl => mdl.LastUpdate) 
+            (UTC)
+        </dd>
+    </dl>
+</div>
+<div>
+
+    <a asp-action="MonteCarloJobs">Job list</a>
+</div>
+

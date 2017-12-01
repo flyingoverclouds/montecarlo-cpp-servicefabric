@@ -1,7 +1,68 @@
-﻿@{
-    ViewData["Title"] = "MonteCarlo";
+﻿@model MCEC_Jobs.Interface.MonteCarloJobSetting
+
+
+@{
+    ViewData["Title"] = "New MonteCarlo job";
 }
 <h2>@ViewData["Title"]</h2>
-<h3>@ViewData["Message"]</h3>
+<hr/>
+<h3>job settings : </h3>
+<div>
+    <form asp-action="SubmitNewJob">
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(mdl => mdl.Steps)
+            </dt>
+            <dd>
+                @Html.EditorFor(mdl => mdl.Steps)
+            </dd>
 
-<p>Use this area to provide additional information.</p>
+            <dt>
+                @Html.DisplayNameFor(mdl => mdl.Simulations)
+            </dt>
+            <dd>
+                @Html.EditorFor(mdl => mdl.Simulations)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(mdl => mdl.Maturity)
+            </dt>
+            <dd>
+                @Html.EditorFor(mdl => mdl.Maturity)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(mdl => mdl.Strike)
+            </dt>
+            <dd>
+                @Html.EditorFor(mdl => mdl.Strike)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(mdl => mdl.Spot)
+            </dt>
+            <dd>
+                @Html.EditorFor(mdl => mdl.Spot)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(mdl => mdl.Volatility)
+            </dt>
+            <dd>
+                @Html.EditorFor(mdl => mdl.Volatility)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(mdl => mdl.InterestRate)
+            </dt>
+            <dd>
+                @Html.EditorFor(mdl => mdl.InterestRate)
+            </dd>
+            <dt></dt><dl><input type="submit" value="Submit" class="btn btn-default" /></dl>
+        </dl>
+    </form>
+</div>
+<div>
+    <a asp-action="MonteCarloJobs">Job list</a>
+</div>
+
