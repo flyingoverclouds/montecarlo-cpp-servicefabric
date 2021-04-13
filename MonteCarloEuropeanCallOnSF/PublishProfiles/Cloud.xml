@@ -20,7 +20,7 @@
                                     AzureActiveDirectory="true"
                                     ServerCertThumbprint="0123456789012345678901234567890123456789" />
   -->
-  <ClusterConnectionParameters ConnectionEndpoint="" />
+  <ClusterConnectionParameters ConnectionEndpoint="sfnicospike.francecentral.cloudapp.azure.com:19000" X509Credential="true" ServerCertThumbprint="F0AA39EAA2F80DA91B4816BD38947368CC5D10A4" FindType="FindByThumbprint" FindValue="7434f46ead7a9a7352e5ab62ea57c1aea68b046b" StoreLocation="CurrentUser" StoreName="My" />
   <ApplicationParameterFile Path="..\ApplicationParameters\Cloud.xml" />
   <CopyPackageParameters CompressPackage="true" />
 </PublishProfile>
